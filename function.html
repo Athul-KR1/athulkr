@@ -1,0 +1,39 @@
+<html>
+    <head id>
+   </head>
+    <body>
+     <p id='para'>bababa
+    </p>
+    <button onclick="document.getElementById('para').innerHTML='hi'">
+        clickhereforchange
+    </button>
+    <script>
+        function flower(){
+            alert('hello')
+            document.getElementeryById('para').innerHTML='hello'
+        }
+    </script>
+    <button onclick="flower()">click here</button>
+    <select name="color" id="color" onchange="bgcolour()">
+        <option value="blue">blue</option>
+        <option value="black">black</option>
+        <option value="brown">brown</option>
+
+    </select>
+    <script>
+        function bgcolour(){
+            color=document.getElementById('color').value 
+            document.body.style.backgroundColor=color
+        }
+    </script>
+    <script>
+        function changedata()
+        {
+            second_box=document.getElementById('data2').value
+            document.getElementById('data1').value=second_box
+        }
+    </script>
+    <input type="text" id="data1">
+    <input type="text" id="data2" onkeypress="changedata()">
+    </body>
+</html>
